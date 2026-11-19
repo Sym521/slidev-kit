@@ -54,4 +54,4 @@ When reporting, state: number of slides, `verify` result (errors / warnings), an
 `pnpm compare <theme>` exports `themes/<theme>/design/preview.md` and writes Figma-vs-Slidev images to
 `exports/compare/<theme>/NN-name.png` (Figma / Slidev / overlay: red = only in Slidev, cyan = only in Figma).
 Pairs are listed in `themes/<theme>/design/compare-map.json`.
-For `spen`: `06`/`07` use a different photo than the sample, so their diff % is high by design — compare the text only.
+For `basic`: `06`/`07` use a different photo than the sample, so their diff % is high by design — compare the text only.

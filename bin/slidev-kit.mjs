@@ -12,7 +12,7 @@ Deck commands (run in a deck repository):
   verify [file=slides.md]   check + rendered overflow/overlap check, PNGs in exports/verify/
 
 Scaffolding:
-  init <dir> [--theme spen] [--ref <git tag/branch>]   create a new deck repository
+  init <dir> [--theme basic] [--ref <git tag/branch>]   create a new deck repository
        (testing: --kit <spec> --theme-spec <spec> override the dependency specifiers)
   themes                    list themes (slidev-kit repository only)
 
@@ -45,13 +45,13 @@ switch (cmd) {
   }
   case 'init': {
     const kitPkg = JSON.parse(readFileSync(join(KIT_ROOT, 'package.json'), 'utf8'))
-    const theme = flag('theme', 'spen')
+    const theme = flag('theme', 'basic')
     const ref = flag('ref', '')
     const repo = kitPkg.slidevKit.repo
     const kit = flag('kit', `${repo}${ref ? `#${ref}` : ''}`)
     const themeSpec = flag('theme-spec', `${repo}#${ref ? `${ref}&` : ''}path:/themes/${theme}`)
     const dir = args[0]
-    if (!dir) { console.error('usage: slidev-kit init <dir> [--theme spen] [--ref v0.1.0]'); process.exit(1) }
+    if (!dir) { console.error('usage: slidev-kit init <dir> [--theme basic] [--ref v0.1.0]'); process.exit(1) }
     if (themes().length && !themes().includes(theme)) { console.error(`unknown theme "${theme}" (available: ${themes().join(', ')})`); process.exit(1) }
     const out = resolve(dir)
     if (existsSync(out) && readdirSync(out).length) { console.error(`${out} is not empty`); process.exit(1) }

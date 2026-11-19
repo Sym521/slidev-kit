@@ -17,7 +17,7 @@ no deck content belongs here.
 1. Changing a theme's layouts or limits: update `limits.mjs` **and** `docs/layouts.md` together (same numbers).
 2. Visual changes to a theme: check with `pnpm preview <theme>` and, if Figma refs exist, `pnpm compare <theme>`.
 3. Changes to `tools/` or `template/`: test end-to-end in a scratch deck
-   (`node bin/slidev-kit.mjs init <tmp> --kit link:$PWD --theme-spec link:$PWD/themes/spen`,
+   (`node bin/slidev-kit.mjs init <tmp> --kit link:$PWD --theme-spec link:$PWD/themes/basic`,
    then `pnpm install && pnpm verify` there).
 4. Deck repos pull updates with `pnpm update`; breaking changes to rules or layout names need a version
    bump in `package.json` and a git tag.

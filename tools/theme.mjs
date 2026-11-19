@@ -8,7 +8,7 @@ export const KIT_ROOT = resolve(import.meta.dirname, '..')
 export const THEMES_DIR = join(KIT_ROOT, 'themes')
 
 // Resolve the theme directory of a deck from its headmatter `theme:` the same way Slidev does:
-// a path (./, ../, /) or a package name (`spen` -> slidev-theme-spen / @slidev/theme-spen / spen).
+// a path (./, ../, /) or a package name (`basic` -> slidev-theme-basic / @slidev/theme-basic / basic).
 // Package themes resolve to their real path, so this matches what Slidev renders.
 export function themeDirOf(deck, file) {
   const theme = deck.headmatter?.theme ?? deck.slides?.[0]?.frontmatter?.theme

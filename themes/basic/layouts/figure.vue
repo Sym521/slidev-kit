@@ -16,7 +16,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="slidev-layout spen figure">
+  <div class="slidev-layout basic figure">
     <figure class="fig" :class="{ border }">
       <video v-if="video" :src="video" autoplay muted loop playsinline />
       <img v-else-if="image" :src="image" alt="">

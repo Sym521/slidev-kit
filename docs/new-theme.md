@@ -3,7 +3,7 @@
 A theme is a workspace package `themes/<name>/` (package name `slidev-theme-<name>`) that is both a Slidev theme
 and a slidev-kit rule set. Decks install it with `github:Sym521/slidev-kit#path:/themes/<name>`.
 
-1. Copy an existing theme as a starting point: `cp -r themes/spen themes/<name>`
+1. Copy an existing theme as a starting point: `cp -r themes/basic themes/<name>`
    (or start empty — the required files are listed below).
 2. Edit `package.json` (`name: slidev-theme-<name>`, `files`, `dependencies` for fonts etc., `slidev.defaults`),
    then `styles/`, `layouts/`, `components/`. Run `pnpm install` at the repo root.

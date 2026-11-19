@@ -3,7 +3,7 @@
   slots:   default = `# Outline` + a numbered list (`1. Item`)
 -->
 <template>
-  <div class="slidev-layout spen outline">
+  <div class="slidev-layout basic outline">
     <slot />
   </div>
 </template>

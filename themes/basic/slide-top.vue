@@ -1,10 +1,10 @@
 <!-- Page number, bottom-right on every slide. Hide per slide with `pageNumber: false`. -->
 <template>
-  <div v-if="$frontmatter.pageNumber !== false" class="spen-page-number">{{ $page }}</div>
+  <div v-if="$frontmatter.pageNumber !== false" class="basic-page-number">{{ $page }}</div>
 </template>
 
 <style>
-.spen-page-number {
+.basic-page-number {
   position: absolute;
   top: var(--pn-top);
   right: var(--pn-right);

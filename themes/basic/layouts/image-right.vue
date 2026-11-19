@@ -16,7 +16,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="slidev-layout spen image-right" :class="{ wide }">
+  <div class="slidev-layout basic image-right" :class="{ wide }">
     <div class="ir-text">
       <slot />
     </div>

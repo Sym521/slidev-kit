@@ -55,7 +55,7 @@ export const LAYOUTS = {
 //   bottomSafe:   y (slide px) below which body text triggers a WARN
 export const VERIFY = {
   textSelector: 'h1, h2, h3, p, li, figcaption, .cover-credit',
-  pageNumber: '.spen-page-number',
+  pageNumber: '.basic-page-number',
   captions: 'figcaption, .cover-credit',
   behindText: '.is-bleed',
   bottomSafe: 1000, // page number starts at 1017

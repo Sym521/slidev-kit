@@ -7,7 +7,7 @@
                         → rendered as "[1]." in bold, smaller text
 -->
 <template>
-  <div class="slidev-layout spen side-title">
+  <div class="slidev-layout basic side-title">
     <div class="st-title">
       <slot />
     </div>

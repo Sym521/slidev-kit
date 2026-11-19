@@ -15,7 +15,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="slidev-layout spen cover">
+  <div class="slidev-layout basic cover">
     <img
       v-if="image"
       :src="image"

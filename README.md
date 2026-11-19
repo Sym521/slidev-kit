@@ -2,14 +2,14 @@
 
 Slidev themes, rule / overflow checks and a deck scaffold for Claude-assisted presentations (1920×1080).
 
-- **Themes** — `themes/<name>/` (currently: `spen`, ported from a Figma template)
+- **Themes** — `themes/<name>/` (currently: `basic`, ported from a Figma template)
 - **Checks** — `slidev-kit check` (static rules) and `slidev-kit verify` (rendered overflow / overlap + PNG per slide)
 - **Scaffold** — `slidev-kit init` creates a deck repository with `CLAUDE.md`, Claude settings and the Slidev skill
 
 ## Start a new presentation
 
 ```sh
-pnpm dlx github:Sym521/slidev-kit init my-talk --theme spen
+pnpm dlx github:Sym521/slidev-kit init my-talk --theme basic
 cd my-talk
 git init
 pnpm install
@@ -30,11 +30,11 @@ A deck depends on two packages from this repository:
 
 ```json
 "slidev-kit": "github:Sym521/slidev-kit",
-"slidev-theme-spen": "github:Sym521/slidev-kit#path:/themes/spen"
+"slidev-theme-basic": "github:Sym521/slidev-kit#path:/themes/basic"
 ```
 
-and selects the theme with `theme: spen` in the headmatter. To pin a release, use
-`init --ref v0.1.0` (→ `#v0.1.0` and `#v0.1.0&path:/themes/spen`).
+and selects the theme with `theme: basic` in the headmatter. To pin a release, use
+`init --ref v0.1.0` (→ `#v0.1.0` and `#v0.1.0&path:/themes/basic`).
 
 ## Repository layout
 
@@ -55,8 +55,8 @@ themes/<name>/         pnpm workspace package `slidev-theme-<name>`
 
 ```sh
 pnpm install
-pnpm preview spen     # layout sampler at http://localhost:3030
-pnpm compare spen     # Figma vs Slidev images in exports/compare/spen/
+pnpm preview basic     # layout sampler at http://localhost:3030
+pnpm compare basic     # Figma vs Slidev images in exports/compare/basic/
 ```
 
 Adding a new theme: see [docs/new-theme.md](docs/new-theme.md).

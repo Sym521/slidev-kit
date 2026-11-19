@@ -2,7 +2,7 @@
  * Base typography shared by every layout.
  * Values come from tokens.css — tune there, not here.
  */
-.slidev-layout.spen {
+.slidev-layout.basic {
   position: relative;
   height: 100%;
   padding: 0;
@@ -15,58 +15,58 @@
   font-feature-settings: normal;
 }
 
-.slidev-layout.spen :is(h1, h2, h3, p, ul, ol, li) {
+.slidev-layout.basic :is(h1, h2, h3, p, ul, ol, li) {
   margin: 0;
   padding: 0;
 }
 
 /* Slide title (default / image-right). cover & section override to display size. */
-.slidev-layout.spen h1 {
+.slidev-layout.basic h1 {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
   letter-spacing: var(--ls-h1);
   font-weight: var(--fw-bold);
 }
 
-.slidev-layout.spen h2 {
+.slidev-layout.basic h2 {
   font-size: var(--fs-h2);
   line-height: var(--lh-h2);
   letter-spacing: var(--ls-h2);
   font-weight: var(--fw-bold);
 }
 
-.slidev-layout.spen h3 {
+.slidev-layout.basic h3 {
   font-size: var(--fs-h3);
   line-height: var(--lh-h3);
   letter-spacing: var(--ls-h3);
   font-weight: var(--fw-bold);
 }
 
-.slidev-layout.spen p,
-.slidev-layout.spen li {
+.slidev-layout.basic p,
+.slidev-layout.basic li {
   font-size: var(--fs-body);
   line-height: var(--lh-body);
   letter-spacing: var(--ls-body);
 }
 
 /* Emphasis: **bold** renders as accent red + bold */
-.slidev-layout.spen strong {
+.slidev-layout.basic strong {
   color: var(--c-accent);
   font-weight: var(--fw-bold);
 }
 
 /* Bullet list */
-.slidev-layout.spen ul {
+.slidev-layout.basic ul {
   list-style: none;
 }
-.slidev-layout.spen ul > li {
+.slidev-layout.basic ul > li {
   position: relative;
   padding-left: var(--list-indent);
 }
-.slidev-layout.spen ul > li + li {
+.slidev-layout.basic ul > li + li {
   margin-top: var(--gap-list);
 }
-.slidev-layout.spen ul > li::before {
+.slidev-layout.basic ul > li::before {
   content: '';
   position: absolute;
   left: calc(var(--list-marker-x) - var(--list-marker-size) / 2);
@@ -78,7 +78,7 @@
 }
 
 /* Small source / credit text */
-.slidev-layout.spen .credit {
+.slidev-layout.basic .credit {
   font-size: var(--fs-note);
   line-height: var(--lh-note);
   letter-spacing: var(--ls-note);
@@ -89,12 +89,12 @@
  * <FocusList>: items appear one per click; only the newest visible item
  * keeps its accent emphasis, earlier ones fall back to plain text.
  */
-.slidev-layout.spen .focus-list li strong {
+.slidev-layout.basic .focus-list li strong {
   color: inherit;
   font-weight: var(--fw-regular);
   transition: color 0.2s, font-weight 0.2s;
 }
-.slidev-layout.spen .focus-list li:not(.slidev-vclick-hidden):is(:last-child, :has(+ li.slidev-vclick-hidden)) strong {
+.slidev-layout.basic .focus-list li:not(.slidev-vclick-hidden):is(:last-child, :has(+ li.slidev-vclick-hidden)) strong {
   color: var(--c-accent);
   font-weight: var(--fw-bold);
 }

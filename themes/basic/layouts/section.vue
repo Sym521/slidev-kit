@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="slidev-layout spen section" :class="[`align-${align ?? 'left'}`, { gradient }]">
+  <div class="slidev-layout basic section" :class="[`align-${align ?? 'left'}`, { gradient }]">
     <div class="section-body">
       <slot />
     </div>

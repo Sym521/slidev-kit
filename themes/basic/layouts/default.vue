@@ -4,7 +4,7 @@
   The body block is vertically centered in the space below the title.
 -->
 <template>
-  <div class="slidev-layout spen default">
+  <div class="slidev-layout basic default">
     <slot />
   </div>
 </template>
