@@ -1,0 +1,94 @@
+/*
+ * Design tokens — single source of truth for the theme.
+ * Canvas is 1920x1080, so every px value maps 1:1 to the Figma file.
+ * Edit values here to fine-tune; layouts only reference these variables.
+ */
+:root {
+  /* ---- Color (Figma variables: "Light slides") ---- */
+  --c-bg: #ffffff;            /* White */
+  --c-text: #000000;          /* Black */
+  --c-accent: #e03e1a;        /* Red — emphasis (**bold**) */
+  --c-accent-2: #f3c11b;      /* Yellow — gradient start */
+  --c-figure-border: rgb(37 37 37 / 0.3); /* figure outline (slide 14) */
+  --g-accent: linear-gradient(90deg, var(--c-accent-2), var(--c-accent));
+
+  /* ---- Typography (Figma text styles) ---- */
+  --font-sans: 'Inter', sans-serif;
+
+  /*            size    line-height  letter-spacing   Figma style */
+  --fs-display: 96px;   --lh-display: 1.2;  --ls-display: -0.02em;   /* Title */
+  --fs-h1:      60px;   --lh-h1:      1.2;  --ls-h1:      -0.022em;  /* Header 1 */
+  --fs-h2:      48px;   --lh-h2:      1.2;  --ls-h2:      -0.02em;   /* Header 2 */
+  --fs-h3:      36px;   --lh-h3:      1.32; --ls-h3:      -0.02em;   /* Header 3 */
+  --fs-body:    36px;   --lh-body:    1.4;  --ls-body:    -0.01em;   /* Body 1 */
+  --fs-body-sm: 30px;   --lh-body-sm: 1.36; --ls-body-sm: -0.01em;   /* Body 2 */
+  --fs-body-xs: 24px;   --lh-body-xs: 1.34; --ls-body-xs: -0.005em;  /* Body 3 */
+  --fs-note:    20px;   --lh-note:    1.4;  --ls-note:    0;         /* Note */
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* ---- Spacing ---- */
+  --margin-x: 128px;          /* left/right page margin */
+  --margin-top: 128px;        /* top of slide title */
+  --content-top: 265px;       /* top of body under a slide title */
+  --gap-title-sub: 24px;      /* cover: title -> subtitle */
+  --gap-list: 78px;           /* bullet item -> next item */
+  --list-marker-x: 16px;      /* bullet dot center, from list left edge */
+  --list-indent: 44px;        /* bullet text start, from list left edge */
+  --list-marker-size: 11px;   /* bullet dot diameter */
+  --list-marker-dy: 2px;      /* bullet dot: nudge down from line center */
+
+  /* ---- Radius ---- */
+  --radius-media: 32px;       /* images next to text */
+  --radius-figure: 24px;      /* full-size figures / video */
+
+  /* ---- Page number ---- */
+  --pn-right: 15px;
+  --pn-top: 1017px;
+
+  /* ---- Credit (source text under media) ---- */
+  --credit-gap: 11px;         /* media bottom -> credit text */
+
+  /* ---- Layout: cover ---- */
+  --cover-credit-right: 16px;
+  --cover-title-top: 236px;
+  --cover-title-width: 1200px;
+  --cover-image-x: 936px;     /* bleed image: left edge */
+  --cover-image-y: 236px;     /* bleed image: top edge */
+  --cover-image-size: 984px;  /* bleed image: width */
+  --cover-credit-top: 976px;
+
+  /* ---- Layout: image-right ---- */
+  --ir-text-width: 799px;     /* left text column */
+  --ir-media-x: 1009px;       /* media column left edge */
+  --ir-media-width: 870px;    /* media column width */
+  --ir-wide-text-width: 636px;   /* wide: true — narrower text (slides 12-13) */
+  --ir-wide-media-x: 753px;      /* wide: true — media left edge */
+  --ir-wide-media-width: 1132px; /* wide: true — media width */
+
+  /* ---- Layout: default (text-only, full width) ---- */
+  --default-body-bottom: 128px;  /* body is vertically centered between title and this margin */
+
+  /* ---- Layout: section ---- */
+  --section-width: 1200px;
+
+  /* ---- Layout: outline ---- */
+  --outline-top: 372px;       /* first item top */
+  --outline-indent: 65px;     /* list left edge, from page margin */
+  --outline-num-width: 66px;  /* number column, numbers right-aligned in it */
+  --outline-text-x: 90px;     /* item text start, from list left edge */
+  --outline-gap: 60px;        /* item -> next item */
+
+  /* ---- Layout: figure ---- */
+  --figure-max-width: 1693px;
+  --figure-max-height: 952px;
+  --figure-border-width: 4px; /* used with `border: true` */
+
+  /* ---- Layout: side-title ---- */
+  --st-title-width: 560px;    /* left title column */
+  --st-body-x: 688px;         /* right column left edge */
+  --st-gap-heading-body: 16px;/* ## heading -> its text */
+  --st-gap-group: 164px;      /* one heading group -> next */
+  --st-gap-ref: 70px;         /* reference -> next reference */
+}

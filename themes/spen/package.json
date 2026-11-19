@@ -1,0 +1,23 @@
+{
+  "name": "slidev-theme-spen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Slidev theme ported from a Figma template (1920×1080, Inter)",
+  "keywords": ["slidev-theme", "slidev"],
+  "type": "module",
+  "engines": { "slidev": ">=0.48.0" },
+  "files": ["components", "layouts", "styles", "slide-top.vue", "limits.mjs", "docs"],
+  "slidev": {
+    "defaults": {
+      "canvasWidth": 1920,
+      "aspectRatio": "16/9",
+      "fonts": { "sans": "Inter", "provider": "none" }
+    }
+  },
+  "dependencies": {
+    "inter-ui": "^4.1.1"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  }
+}

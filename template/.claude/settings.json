@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(node_modules/**)",
+      "Edit(/node_modules/**)"
+    ],
+    "ask": [
+      "Edit(package.json)",
+      "Edit(/package.json)",
+      "Edit(pnpm-workspace.yaml)",
+      "Edit(/pnpm-workspace.yaml)",
+      "Edit(CLAUDE.md)",
+      "Edit(/CLAUDE.md)"
+    ]
+  }
+}

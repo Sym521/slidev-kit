@@ -1,0 +1,39 @@
+{
+  "name": "slidev-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Slidev themes + rule/overflow checks + deck scaffolding for Claude-assisted presentations",
+  "type": "module",
+  "repository": "github:Sym521/slidev-kit",
+  "packageManager": "pnpm@12.21.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "slidev-kit": "./bin/slidev-kit.mjs"
+  },
+  "files": [
+    "bin",
+    "tools",
+    "docs",
+    "template"
+  ],
+  "slidevKit": {
+    "repo": "github:Sym521/slidev-kit"
+  },
+  "scripts": {
+    "preview": "node bin/slidev-kit.mjs preview",
+    "compare": "node bin/slidev-kit.mjs compare",
+    "themes": "node bin/slidev-kit.mjs themes"
+  },
+  "dependencies": {
+    "@slidev/parser": "^53.1.0",
+    "playwright-chromium": "^1.65.1"
+  },
+  "peerDependencies": {
+    "@slidev/cli": "^53.1.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^53.1.0"
+  }
+}
